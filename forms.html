@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>HTML forms</title>
+    <style>
+      input[type=submit]
+      {
+        background-color:black;
+        color:grey;
+        border:none;
+        padding:10px;
+        border-radius: 10px;
+      }
+      input[type=submit]:hover{
+        background_color:rgb(0,0,0,0.7);
+        color:white;
+      }
+      input:focus{
+        background-color:grey;
+      }
+    </style>
+  </head>
+  <body style="background-color:#808B96">
+    <fieldset>
+      <legend>Application Form</legend>
+      <form action="https://www.google.com">
+      <label for="firstname">First Name : </label>
+      <input type="text" name="firstname" value="Sanjeev Sannihith" required></input><br><br>
+      <label for="lastname">Last Name : </label>
+      <input type="text" name="lastname" value="Kota" required><br><br>
+      <label for="email">Enter your email address : </label>
+      <input type="email" name="email"><br><br>
+      <label for="pwd">Enter Password : </label>
+      <input type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
+      <label for="pwd">Confirm Password : </label>
+      <input type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
+      <label for="phoneno">Phone Number : </label>
+      <input type="tel" name="phoneno" placeholder="Phone Number" pattern="(0-9){10}"><br><br>
+      <input type="radio" name="gender" value="" checked>
+      <label for="gender">Male</label><br>
+      <input type="radio" name="gender" value="">
+      <label for="gender">Female</label><br><br>
+      <input type="checkbox" name="language" value="">
+      <label for="language">Telugu</label><br>
+      <input type="checkbox" name="language" value="">
+      <label for="language">Hindi</label><br>
+      <input type="checkbox" name="language" value="">
+      <label for="language">Kannada</label><br>
+      <input type="checkbox" name="language" value="" checked>
+      <label for="language">English</label><br><br>
+      <label for="exp">Work Experience</label>
+      <input type="number" name="" value=""><br><br>
+      <label for="DOB">Date of birth : </label>
+      <input type="date" name="DOB" value=""><br><br>
+      <label for="Resume">Resume : </label><br>
+      <input type="file"><br><br>
+      <input type="submit" value="Register">
+      <input type="reset" name="" value="Reset">
+      <input type="button" name="click" value="Click" onclick="alert('Namaste anna')">
+      </fieldset>
+    </form>
+  </body>
+</html>
