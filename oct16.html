@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            function getGender()
+            {
+                var gen=document.getElementsByName('Gender')
+                console.log(typeof(gen))
+                for(i=0;i<gen.length;i++)
+                {
+                    if(gen[i].checked)
+                    {
+                        document.getElementById('one').innerHTML=gen[i].value
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="one" style="color: rgb(0, 110, 174);"></h1>
+        <form action="">
+            First Name:
+            <input type="text" name="" id="fname">
+            <br><br>
+            Last Name:
+            <input type="text" id="lname">
+            <br><br>
+            Choose Gender:
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="button" onclick="getGender()" value="Get user gender">
+        </form>
+    </body>
+</html>
